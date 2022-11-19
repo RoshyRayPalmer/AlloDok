@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+/* font-family: 'Merienda', cursive; */
+
 *{
     margin: 0;
     padding: 0;
@@ -12,58 +15,83 @@ body{
 .nav-one{
     display: flex;
     width: 100%;
-    height: 7vh;
-    justify-content: end;
+    height: 50px;
     align-items: center;
-    padding: 0 14px;
+    padding: 6px 150px;
     background-color: #6daedb;
     color: aliceblue;
-}
-.nav-one div{
-    margin: 8px;
-}
-.nav-one .media-links .fa-brands{
-    font-size: 18px;
-    margin: 3px;
-    color: aliceblue;
+    position: fixed;
+    z-index: 1;
 }
 .search .fa-magnifying-glass{
     position: absolute;
     font-size: 15px;
     top: 17px;
-    right: 90px;
+    left: 42%;
     color: #232F3F;
 }
-.login .fa-user{
-    color: aliceblue;
-    font-size: 18px;
-
+.search{flex: 1;}
+.login{
+    display: flex;
+    flex: 1;
+    justify-content: end;
 }
 .inp-search{
-    padding: 7px;
-    border-radius: 5px;
-
-    border: none;
-    width: 200px;
+    padding:7px 16px;
+    border-radius: 18px;
+    width: 90%;
     outline: none;
     color: #232F3F !important;
-    font-size: 16px;
+    font-size: 18px;    
+    border: 1.5px solid #232F3F;
 
 }
-.nav-one .date-time{
-    /* color: #232F3F; */
-    line-height: 8px;
-
+.inp-search:focus{
+    border: 2px solid red;
+}
+.login button{
+    padding: 6px;
+    margin: 12px;
+    width: 110px;
+    font-size: 18px;
+    border-radius: 16px;
+    border: none;
+    border: 1.5px solid #232F3F;
+    cursor: pointer;
+}
+.login .sign-up{
+    background-color: #232F3F;
+    color: #f1f1f1;
+    border: none;
+}
+.nav-one .fa-user{
+    font-size: 22px;
+    margin: 6px;
+}
+.nav-one .fa-chevron-down{
+    font-size: 14px;
+    cursor: pointer;
 }
 .nav-bar{
     display: flex;
-    width: 80%;
-    height: 10vh;
+    width: 100%;
+    height: 60px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 50px;
+    z-index: 1;
+    padding: 0 110px;
+    transition: ease-in-out 1s;
+
+}
+.navbar-fading{
+    background: #fff;
 }
 .nav-bar .logo{
+    font-family: 'Merienda', cursive;
+
     font-size: 23px;
     letter-spacing: 1px;
     color: #232F3F;
@@ -75,23 +103,31 @@ body{
     font-size: 18px
 }
 .nav-bar .link{
-    margin: 6px;
+    margin-right: 16px;
     text-transform: capitalize;
 }
 .link a{
     text-decoration: none;
     color: #232F3F;
+    
+}
+.link:hover{
+   transform: scale(1.5);
+   transition: 1 ease-in-out;
 }
 .main{
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 105vh;
     overflow: hidden;
+
 }
 .main img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 2s ease-in;
+
 }
 .main .search-doc{
     position: absolute;
@@ -175,9 +211,128 @@ body{
 }
 .doctors .doc-profil img{
     width: 270px;
-    height:280px;
+    height:290px;
+    margin-bottom: 6px;
 
 }
+.doc-desc .post{
+    font-family: 'Merienda', cursive;
+    margin: 0px 6px;
+
+}
+.doc-desc .fa-user-doctor{
+    font-size: 18px;
+    margin: 6px;
+}
+.doc-profil button{
+    padding: 6px 10px;
+    border:none;
+    border-radius: 5px;
+    background: #232F3F;
+    margin: 8px;
+    font-size: 18px;
+    color: #f1f1f1;
+}
+.doc-profil .doc-desc .media-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media-social .fa-brands , .fa-location-dot{
+    margin: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* ****************  Test section ********************* */
+ .call-content{
+            display: flex;
+            justify-content: space-between;
+            padding: 52px 32px;
+
+        }
+        .call-desc{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 35px 0;
+        }
+        .call-desc h1{
+            font-size: 3rem;
+            padding: 16px 0;
+            color: #1b1b44;
+        }
+        .call-desc p{
+            margin: 22px 0px;
+        }
+        .call-desc .dr-name{
+            text-align: end;
+            margin: 16 16px;
+            color: #1b1b44;
+        }
+        .call-desc .line{
+            display: block;
+            /* border: #1b1b44 2px solid; */
+            width: 45px;
+            height: 1.5px;
+            background-color: #1b1b44;
+        }
+        .call-content button{
+            padding: 5px 17px;
+            background: transparent;
+            border: none;
+            color: #1b1b44;
+            /* border: 1px solid gray; */
+            margin: 6px;
+            position: absolute;
+            bottom: 3px;
+            right: 5px;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .left{
+            position: absolute;
+            transform: rotate(90deg);
+            width: 20px !important;
+            bottom: 15px;
+            right: 100px;
+        }
+        .bottom-left{
+            position: absolute;
+            bottom: 25px;
+            right: 71px;
+            width: 40px !important;
+        }
+        .right{
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            width: 20px !important;
+            transform: rotate(90deg);
+        }
+        .top-right{
+            position: absolute;
+            right: 9px;
+            bottom: -10px;
+        }
+        /* .btn-call-content{
+            position: relative;
+        } */
+        .video-desc{
+            margin: 22px;
+            /* position: relative; */
+        }
+        .video-card{
+            /* position: absolute; */
+            border: 3px double #1b1b44;
+            padding: 12px;
+
+        }
+        /* .video-desc video{
+            width: 500px;
+            height: 400px;
+        } */
+
 /* **************** section Three ********************* */
 
 .services{
@@ -322,7 +477,7 @@ body{
     margin: 22px 0 32px 0;
 }
 .arrow{
-    font-size: 32px;
+    font-size: 22px;
     margin: 12px;
     padding: 8px;
     color: #000;
@@ -344,6 +499,24 @@ body{
     right: 12px;
     transform: translateY(-50%);
 }
+
+.carousel-slides .rectangles{
+    display: flex;
+    position: relative;
+    left: 50%;
+    bottom: 52px;
+}
+.carousel-slides .rectangle{
+    width: 32px;
+    height: 6px;
+    border: 1px solid #232F3F;
+    margin: 3px;
+    transform: translateX(-50%);
+    cursor: pointer;
+ }
+ .carousel-slides .rectangle-active{
+     background: gray;
+ }
 /* **************** section Six ********************* */
 
 .fact-question{
@@ -370,24 +543,30 @@ body{
     margin: 32px auto;
     align-items: center;
 }
-.quest_resp .question{
-    /* padding: 26px 6px; */
+.quest_resp{
+    width: 100%;
+}
+.quest_resp .questions{
+    padding: 15px 10px;
+    margin: 10px 0;
     cursor: pointer;
-    /* background-color: #232F3F; */
+}
+.question_bg{
+    background: #232F3F;
+    color: #f1f1f1;
 }
 .quest_resp .more-plus{
     float: right;
-    padding: 6px;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 100;
     color: #232F3F;
 }
-.quest_resp .answer{
-    visibility: hidden;
+.answer{
+    display: none;    
 }
-
-
-
+.show_answer{
+    display: block;
+}
 
 
 
