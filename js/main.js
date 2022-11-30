@@ -1,5 +1,23 @@
 const NavBar = document.querySelector('.nav-bar') // navBar
+const ToggleBtn = document.querySelector('.toggle-nav')
+const closeNav = document.querySelector('.close-nav')
+const links = document.querySelector('.links')
 
+
+ToggleBtn.addEventListener('click',()=>{
+    links.classList.toggle('links-show')
+})
+closeNav.addEventListener('click', ()=>{
+    links.classList.remove('links-show')
+})
+function fadingScroll(){
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300 ) {
+        NavBar.classList.add('navbar-fading');
+    }else{
+        NavBar.classList.remove('navbar-fading');
+
+    }
+}
 //**** Slider İmages */
 let compteur = 0;
 let timer, slideContent, slides, slideWidth, speed, transition;
@@ -17,14 +35,6 @@ let firsİndex = 0;
 //navbar scroll fading
 window.onscroll = function (){fadingScroll();}
 
-function fadingScroll(){
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300 ) {
-        NavBar.classList.add('navbar-fading');
-    }else{
-        NavBar.classList.remove('navbar-fading');
-
-    }
-}
 
 
 // Fading image cover
@@ -118,7 +128,7 @@ function slideprev (){
     // recupation d'elements html pour creer un tableau
     for (let q = 0; q < questions.length; q++) {
         ListQ.push(questions[q].innerHTML) 
-         console.log(answer);
+        //  console.log(answer);
 
         
         //***** get element index cliques.

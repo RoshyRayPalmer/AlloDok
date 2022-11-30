@@ -1,0 +1,417 @@
+/* ************ Mobil format ********** */
+@media screen and (max-width:700px){
+    p{
+        font-size: 16px !important;
+    }
+    .nav-one{
+        display: flex;
+        padding: 0px 30px
+    }
+    .inp-search{
+     display: none;
+    }
+    .inp-search-show{
+        padding:3px 8px;
+        border-radius: 16px;
+        width: 90%;
+        font-size: 16px;    
+        border: 1px solid #232F3F;
+    
+    }
+    .search .fa-magnifying-glass{
+        position: absolute;
+        font-size: 15px;
+        top: 14px;
+        left: 40px;
+        color: #232F3F;
+        background-color: #fff;
+        padding: 6px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .login button{
+        padding: 4px;
+        margin: 6px;
+        width: 70px;
+        font-size: 14px;
+        border-radius: 16px;
+        border: none;
+        border: 1px solid #232F3F;
+        cursor: pointer;
+    }
+    .nav-one .fa-user, .nav-one .fa-chevron-down{
+        display: none;
+    }
+    /* ************ Nav bar **************** */
+    .toggle-nav{
+        display: block;
+    }
+    .nav-bar{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 50px;
+        z-index: 1;
+        padding: 0 110px;
+        transition: ease-in-out 1s;
+    
+    }
+    .navbar-fading{
+        background: #fff;
+    }
+    .nav-bar .logo{
+        font-family: 'Merienda', cursive;
+    
+        font-size: 23px;
+        letter-spacing: 1px;
+        color: #232F3F;
+    
+    }
+    .links{
+        top: 60px;
+        left: -50%;
+        position: absolute;
+        width: 50%;
+        background: #232F3F;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none;
+        font-size: 18px;
+        transition: ease-in .5s;
+    }
+    .links-show{
+        left: 0%;
+ 
+    }
+    .nav-bar .link{
+        margin-right: 16px;
+        padding: 22px;
+        text-transform: capitalize;
+    }
+    .link a{
+        text-decoration: none;
+        color: #f1f1f1;
+        
+    }
+    .link a:hover{
+        color: #d2d2d2;
+        border-bottom: 3px solid #f1f1f1;
+        transition: 1 ease-in-out .2s;
+    }
+
+    .nav-bar{
+        padding: 0 30px;
+        transition: ease-in-out 1s;
+    }
+    .close-nav .line{
+        display: block;
+    }
+    .nav-bar .logo{
+        font-family: 'Merienda', cursive;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #232F3F;
+    
+    }
+
+    /* ************ Header **************** */
+    .main{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+    
+    }
+    .main h1{
+        text-transform: capitalize;
+        color: #232F3F;
+        padding: 8px;
+        font-size: 1rem;
+    }
+    .main .fa-magnifying-glass{
+        position: absolute;
+        top: 70%;
+        right: 10px;
+        font-size: 14px;
+        transform: translateY(-62%,);
+    }
+    .main .search-doc{
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+    .main .doc-search{
+        padding: 6px 12px;
+        margin: 6px 0;
+        font-size: 16px;
+    }
+    /* ************ Doctor **************** */
+
+    .doctors .doctors-list{
+        /* width: 100%;
+        height: 100%; */
+        /* margin: 0px 0px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* padding: 26px 0; */
+        /* padding-bottom: 32px; */
+        /* gap: 10px; */
+    
+    }
+    .doctors .doc-profil img{
+        width: 290px;
+        height:190px;
+        margin-bottom: 6px;
+    
+    }
+    .doc-desc .post{
+        font-size: 14px;
+    }
+    .doc-desc h2{
+        font-size: 18px;
+        font-family: 'Merienda', cursive;
+        margin: 0px 6px;
+    
+    }
+    .doc-desc .fa-user-doctor{
+        font-size: 14px;
+        margin: 6px;
+    }
+    .doc-profil button{
+        display: none;
+    }
+    .media-social .fa-brands , .fa-location-dot{
+        margin: 4px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    /* ************ Call Video **************** */
+
+    .call-content{
+        display: flex;
+        padding: 32px 32px;
+        flex-direction: column-reverse;
+    }
+    .call-desc{
+        padding: 0px 0;
+    }
+    .call-desc h1{
+        font-size: 1.5rem;
+        padding: 14px 0;
+    }
+    .call-desc p{
+        margin: 12px 0px;
+    }
+    .call-desc .dr-name{
+        text-align: end;
+        margin: 16 16px;
+        color: #1b1b44;
+    }
+    .call-desc .line{
+        display: block;
+        width: 45px;
+        height: 2px;
+        background-color: #1b1b44;
+    }
+    .call-content button{
+        padding: 5px 17px;
+        background: transparent;
+        border: none;
+        color: #1b1b44;
+        margin: 6px;
+        /* position: absolute; */
+        bottom: 3px;
+        right: 5px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .left{
+        position: absolute;
+        transform: rotate(90deg);
+        width: 20px !important;
+        bottom: 15px;
+        right: 100px;
+    }
+    .bottom-left{
+        position: absolute;
+        bottom: 25px;
+        right: 71px;
+        width: 40px !important;
+    }
+    .right{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 20px !important;
+        transform: rotate(90deg);
+    }
+    .top-right{
+        position: absolute;
+        right: 9px;
+        bottom: -10px;
+    }
+    .call-content video{
+        width: 100%;
+    }
+    .video-desc{
+        margin: 0px;
+    }
+    .video-card{
+        border: 3px double #1b1b44;
+        padding: 6px;
+
+    }
+        /* ************ conseil  **************** */
+        .services{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f1f1f1;
+            padding: 3rem 0 ;
+            background: #232F3F;
+        }
+        .services h1{
+            font-size: 1.5rem;
+            text-align:center;
+            margin: 22px 40px;
+            color: #f1f1f1;
+        }
+        
+        .services-content{
+            display: flex;
+            flex-wrap: wrap;
+            position: initial;
+            padding: 0 22px;
+        }
+        .services-content .bg-gray{
+            display: none;
+        }
+        .services-content .bg-blue{
+            width: 100%;
+            height: auto;
+            background-color: #232F3F;
+        }
+        .services-content .card{
+            position: initial;
+            width:46%;
+            height: auto;
+            display: flex;
+            flex-direction: column;            
+            align-items: center;
+            background-color: #fff;
+            text-transform: capitalize;
+            margin: 6px;
+        }
+        .card .cycle-card{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 6px;
+            font-size: 32px;
+            background-color: #c8c8c8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card .fa-stethoscope{
+            font-size: 20px;
+        }
+        .card h2{
+            font-size: 18px;
+            margin: 9px 0;
+        }
+        .card p{
+            text-align: center;
+            margin: 9px 0;
+        }
+        /* **************** section Five ********************* */
+        .advice-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 3rem 22px;
+        }
+        .advice-content h1 {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            text-align: left;
+            margin: 10px 0 32px 0;
+        }
+        .advice-content .call-more{
+            width: 100%;        }
+        .advice-content .services-liste{
+            width: 100%;
+            padding: 32px;
+            margin: 26px;
+            line-height: 26px;
+            background-color: #232F3F;
+            color: #f1f1f1ff;
+        }
+        .services-liste h2{
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            text-transform: capitalize;
+        }
+
+        .slide h1{
+            font-size: 1.5rem;
+            margin: 22px 0px 9px 0;
+        }
+        .img-slide{
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            margin: 22px 0 32px 0;
+        }
+        .carousel-slides .rectangles{
+            display: flex;
+            position: relative;
+            left: 40%;
+            bottom: 52px;
+        }
+
+
+
+        .services-liste .fa-check{
+            margin: 8px;
+        }
+        .fact-question{
+            width: 100%;
+            height: auto;
+            padding: 32px 25px;
+        }
+
+        .fact-question h1{
+            text-align: center;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin: 6px 0;
+        }
+        .fact-question h2{
+            font-size: 16px;
+            text-align: center;
+            font-weight: 100;
+        }
+        .factQuestion-content{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 32px auto;
+            align-items: center;
+        }
+}
